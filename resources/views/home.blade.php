@@ -3,5 +3,13 @@
 @section('title', 'Home page')
 
 @section('content')
-    <p>la mia home page</p>
+
+    <h1>Elenco dei films</h1>
+
+    <ul>
+        @foreach ($movies as $movie)
+        <li>{{$movie->id}} - {{$movie->title}} - {{$movie->original_title}}</li>
+        @endforeach
+    </ul>
+
 @endsection

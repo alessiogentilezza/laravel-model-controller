@@ -9,13 +9,13 @@
 </head>
 <body>
 
-    @include('partials.header')
+    {{-- @include('partials.header') --}}
 
     <div class="container">
         @yield('content')
     </div>
 
-    @include('partials.footer')
+    {{-- @include('partials.footer') --}}
 
 </body>
 </html>
